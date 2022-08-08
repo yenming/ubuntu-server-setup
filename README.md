@@ -31,11 +31,10 @@ $ sudo apt-get update
 安裝 Docker
 ```
 $ sudo apt-get install docker.io
-$ 
 ```
 
 檢查 Docker
 ```
-service docker status
-docker version
+$ service docker status
+$ docker version
 ```
