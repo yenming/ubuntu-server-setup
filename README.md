@@ -34,6 +34,11 @@ $ sudo apt-get install docker.io
 $ sudo apt-get install docker-compose
 $ snap install docker 
 ```
+將自己的使用者帳號加入至 docker 群組：
+```
+$ sudo usermod -aG docker root
+
+```
 
 檢查 Docker
 ```
