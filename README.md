@@ -40,3 +40,8 @@ $ snap install docker
 $ service docker status
 $ docker version
 ```
+
+改權限
+```
+sudo chmod -R 777 file
+```
