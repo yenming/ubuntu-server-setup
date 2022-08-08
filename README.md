@@ -31,6 +31,8 @@ $ sudo apt-get update
 安裝 Docker
 ```
 $ sudo apt-get install docker.io
+$ sudo apt-get install docker-compose
+$ snap install docker 
 ```
 
 檢查 Docker
