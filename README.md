@@ -48,48 +48,48 @@ $ docker version
 
 刪除docker 所有容器(大招刪光光歸0用)
 ```
-docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q)
+$  docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -q)
 ```
 
 進入docker容器
 ```
-docker exec -it [container id ] /bin/bash
+$  docker exec -it [container id ] /bin/bash
 ```
 
 重啟docker容器
 ```
-docker restart [container id ]
+$  docker restart [container id ]
 ```
 
 運行docker容器 啟動/關閉/暫停
 ```
-docker-compose up
-docker-compose down
-docker-compose stop [container id ]
+$  docker-compose up
+$  docker-compose down
+$  docker-compose stop [container id ]
 ```
 
 刪除docker容器
 ```
-docker rm [container id ]
+$  docker rm [container id ]
 ```
 
 刪除沒有被使用的docker容器
 ```
-docker system prune
+$  docker system prune
 ```
 
 改權限
 ```
-sudo chmod -R 777 file
+$  sudo chmod -R 777 file
 ```
 
 
 查詢 PID
 ```
-sudo lsof -i:port號
+$  sudo lsof -i:port號
 ```
 
 清除 PID
 ```
-kill PID號碼
+$  kill PID號碼
 ```
