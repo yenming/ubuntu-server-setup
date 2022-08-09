@@ -78,6 +78,11 @@ $  docker rm [container id ]
 $  docker system prune
 ```
 
+啟動docker
+```
+$ systemctl start docker
+```
+
 改權限
 ```
 $  sudo chmod -R 777/755 file
