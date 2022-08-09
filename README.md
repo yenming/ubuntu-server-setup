@@ -80,7 +80,7 @@ $  docker system prune
 
 改權限
 ```
-$  sudo chmod -R 777 file
+$  sudo chmod -R 777/755 file
 ```
 
 
