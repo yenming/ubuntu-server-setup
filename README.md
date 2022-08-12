@@ -125,3 +125,12 @@ l ：較長、較詳細的將該 PID 的的資訊列出；
 j ：工作的格式 (jobs format)
 -f ：做一個更為完整的輸出。
 ```
+
+使用 ssh 複製或上傳檔案
+
+```
+將 檔案/資料夾 從遠端 Ubuntu 機複製至本地(scp)
+$ scp -r ubuntu@[ip]:/home/ubuntu/code ./
+將 檔案/資料夾 從本地複製至遠端 Ubuntu 機(scp)
+$ scp -r code ubuntu@[ip]:/home/ubuntu/
+```
