@@ -134,3 +134,11 @@ $ scp -r ubuntu@[ip]:/home/ubuntu/code ./
 將 檔案/資料夾 從本地複製至遠端 Ubuntu 機(scp)
 $ scp -r code ubuntu@[ip]:/home/ubuntu/
 ```
+
+檔案連結
+
+```
+$ ln -sf [source_folder] [target_folder]
+ex:source 就是你 root/data, target 就是你要放的 folder (eg. /var/www/hozi-project/data)
+
+```
