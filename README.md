@@ -1,5 +1,7 @@
 # ubuntu-server-setup
 
+# 機台環境
+
 安裝 Node.js 環境
 
 ```
@@ -16,6 +18,8 @@ $ npm -v
 $ git --version
 ```
 
+# Nginx
+
 安裝 Nginx
 
 ```
@@ -27,6 +31,8 @@ $ apt-get install nginx
 $ apt-get update
 ```
 
+
+# Docker
 
 安裝 Docker
 ```
@@ -82,6 +88,8 @@ $  docker system prune
 ```
 $ systemctl start docker
 ```
+
+#常用指令
 
 改權限
 ```
@@ -142,3 +150,53 @@ $ ln -sf [source_folder] [target_folder]
 ex:source 就是你 root/data, target 就是你要放的 folder (eg. /var/www/hozi-project/data)
 
 ```
+
+
+#簡易防火牆設置ufw
+
+
+安裝
+
+```
+
+$ sudo apt-get install ufw
+
+```
+
+設定防火牆預設規則
+
+```
+$ sudo ufw default allow # 預設允許
+$ sudo ufw default deny # 預設封鎖
+
+```
+
+允許/封鎖通訊埠（port）
+
+```
+
+允許 SSH port
+$sudo ufw allow ssh/sudo ufw allow 22
+
+允許或封鎖其他的 port：
+$sudo ufw allow 80 # 允許 80
+$sudo ufw allow 443 # 允許 443
+$sudo ufw deny 3389 # 封鎖 3389
+$sudo ufw deny 21 # 封鎖 21
+
+一次允許一個範圍的 port：
+sudo ufw allow 6000:6007/tcp # 允許 TCP 6000~6007
+sudo ufw allow 6000:6007/udp # 允許 UDP 6000~6007
+```
+
+開啟/關閉/重設防火牆
+
+```
+
+sudo ufw enable # 啟用防火牆
+sudo ufw disable # 停用防火牆
+sudo ufw reset # 重啟防火牆
+
+```
+
+
