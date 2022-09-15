@@ -38,6 +38,7 @@ $ apt-get update
 ```
 $ apt-get install docker.io
 $ apt-get install docker-compose
+$ apt-get install podman-docker 
 $ snap install docker 
 ```
 將自己的使用者帳號加入至 docker 群組：
