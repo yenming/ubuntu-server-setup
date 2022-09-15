@@ -159,15 +159,15 @@ ex:source 就是你 root/data, target 就是你要放的 folder (eg. /var/www/ho
 
 ```
 
-$ sudo apt-get install ufw
+$ apt-get install ufw
 
 ```
 
 設定防火牆預設規則
 
 ```
-$ sudo ufw default allow # 預設允許
-$ sudo ufw default deny # 預設封鎖
+$ ufw default allow # 預設允許
+$ ufw default deny # 預設封鎖
 
 ```
 
@@ -176,26 +176,33 @@ $ sudo ufw default deny # 預設封鎖
 ```
 
 允許 SSH port
-$sudo ufw allow ssh/sudo ufw allow 22
+$ ufw allow ssh/sudo ufw allow 22
 
 允許或封鎖其他的 port：
-$sudo ufw allow 80 # 允許 80
-$sudo ufw allow 443 # 允許 443
-$sudo ufw deny 3389 # 封鎖 3389
-$sudo ufw deny 21 # 封鎖 21
+$ ufw allow 80 # 允許 80
+$ ufw allow 443 # 允許 443
+$ ufw deny 3389 # 封鎖 3389
+$ ufw deny 21 # 封鎖 21
 
 一次允許一個範圍的 port：
-sudo ufw allow 6000:6007/tcp # 允許 TCP 6000~6007
-sudo ufw allow 6000:6007/udp # 允許 UDP 6000~6007
+$ ufw allow 6000:6007/tcp # 允許 TCP 6000~6007
+$ ufw allow 6000:6007/udp # 允許 UDP 6000~6007
 ```
 
 開啟/關閉/重設防火牆
 
 ```
 
-sudo ufw enable # 啟用防火牆
-sudo ufw disable # 停用防火牆
-sudo ufw reset # 重啟防火牆
+$ ufw enable # 啟用防火牆
+$ ufw disable # 停用防火牆
+$ ufw reset # 重啟防火牆
+
+```
+
+查看目前設了什麼規則
+
+```
+$ ufw status numbered
 
 ```
 
