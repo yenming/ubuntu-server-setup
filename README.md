@@ -152,7 +152,7 @@ ex:source 就是你 root/data, target 就是你要放的 folder (eg. /var/www/ho
 ```
 
 
-#簡易防火牆設置ufw
+# 簡易防火牆設置ufw
 
 
 安裝
