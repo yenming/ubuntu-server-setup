@@ -8,6 +8,7 @@
 $  apt-get install curl
 $  curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 $  apt-get install nodejs
+$  apt install git
 ```
 
 檢查 Node.js / NPM / Git 版本
