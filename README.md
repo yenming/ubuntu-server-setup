@@ -27,6 +27,70 @@ $ git --version
 $ apt-get install nginx
 ```
 
+
+修改 Nginx 的設定檔
+
+```
+$ vim /etc/nginx/sites-enabled/default.conf
+
+```
+
+
+
+改成 Domain 名稱(server_name example.com)
+```
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    
+    root /var/www/html;
+    
+    index index.html index.htm index.nginx-debian.html
+    # 改成 Domain 名稱(server_name example.com)
+    server_name _;
+    
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+
+
+把 location / {} 的大括號中換成以下內容
+
+```
+
+# 反向代理到同一台主機的 3000 Port
+proxy_pass http://localhost:3000;
+
+# 把 IP、Protocol 等 header 都一起送給反向代理的 server
+proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
+
+```
+
+
+存擋以後記得重啟 Nginx
+
+```
+
+$ service nginx reload
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
 更新 Service apt-get
 ```
 $ apt-get update
