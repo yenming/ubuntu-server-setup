@@ -19,6 +19,11 @@ $ npm -v
 $ git --version
 ```
 
+更新 Service apt-get
+```
+$ apt-get update
+```
+
 # Nginx
 
 安裝 Nginx
@@ -80,21 +85,6 @@ $ service nginx reload
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-更新 Service apt-get
-```
-$ apt-get update
-```
 
 
 # Docker
