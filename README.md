@@ -478,3 +478,14 @@ Step 8-3：若有將問題修正好，比如筆者已將防火牆問題處理好
 
 參考資料：https://www.kjnotes.com/devtools/62
 
+
+
+#檢查EJS 的方法
+
+從項目根目錄中的命令行運行以檢查項目中的所有 ejs 文件。
+
+```
+$ npx ejslint **/*.ejs
+```
+
+
