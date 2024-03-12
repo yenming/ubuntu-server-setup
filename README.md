@@ -20,6 +20,7 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 3.Run Update and Install
 sudo apt-get update
 sudo apt-get install nodejs -y
+sudo apt-get install git
 
 ```
 
